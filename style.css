@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+/*settings all links' hover*/
+a:link {
+    color: yellowgreen;
+}
+  
+a:visited {
+  color: orange;
+}
+  
+a:hover {
+    color: orangered;
+    /*background: yellow;*/
+    }
+  
+a:active {
+    color: white;
+}
+
+html{
+    background-image: url("bg.png");
+    background-repeat: repeat;
+    background-color: black;
+    /*stiky footer*/
+    height: 98%;
+    width: 100%;
+    max-width: 960px;
+    display: block;
+    margin: auto;
+}
+
+body{
+    width: 100%;
+    max-width: 960px;
+    height: 100%;
+    max-height: 600px;
+    }
+
+#main{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  /*color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;*/
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+   /* position: relative;
+  left:0px;
+  top:-50px; */ 
+  z-index: 2;
+}
+
+.container_row{
+  display: grid;
+}
+
+.bgimg, #main{
+    grid-column: 1;
+    grid-row: 1;
+}
+header{
+    background: yellow;
+    height: 58px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 35px;
+    color: black;
+    font-family: cursive;
+    font-weight: bolder;
+    text-align: center;
+    }
+
+
+
+#bgimg{
+    filter: opacity(70%);
+    width: 100%;
+    max-width: 960px;
+    height: 100%;
+    max-height: 600px;
+    
+    
+}
+
+h2{
+    color: rgb(255, 115, 0);
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+}
+
+a{
+    line-height: 130%;
+}
