@@ -3,24 +3,31 @@
 }
 
 /*settings all links' hover*/
+
 a:link {
     color: yellowgreen;
 }
-  
+
 a:visited {
-  color: orange;
+    color: orange;
 }
-  
+
 a:hover {
     color: orangered;
     /*background: yellow;*/
-    }
-  
+}
+
 a:active {
     color: white;
 }
 
-html{
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+html {
     background-image: url("bg.png");
     background-repeat: repeat;
     background-color: black;
@@ -32,33 +39,33 @@ html{
     margin: auto;
 }
 
-body{
+body {
     width: 100%;
     max-width: 960px;
     height: 100%;
-    max-height: 600px;
-    }
+    /* max-height: 600px; */
+}
 
+.container_row {
+    position: relative;
+    height: 95%
+}
 
-    .container_row{
-        position: relative;
-        height: 95%
-      }
-      
-      .bgimg, #main{
-          position: absolute;
-      }
+.bgimg, #main {
+    position: absolute;
+}
 
-#main{
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  width: 90%;
-  padding: 10px;
-  left:5%;
-  z-index: 2;
-  height: inherit;
-  }
+#main {
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    width: 90%;
+    padding: 10px;
+    left: 5%;
+    z-index: 2;
+    height: inherit;
+}
 
-header{
+header {
     background: yellow;
     height: 58px;
     margin-bottom: 20px;
@@ -68,46 +75,47 @@ header{
     font-family: cursive;
     font-weight: bolder;
     text-align: center;
-    }
+}
 
-#bgimg{
+#bgimg {
     filter: opacity(70%);
     width: 100%;
     max-width: 960px;
     height: 100%;
-    max-height: 600px;
+    min-height: 600px;
+    /* max-height: 600px; */
     left: 0;
     z-index: -1;
     min-width: 500px;
 }
 
-h2{
+h2 {
     color: rgb(255, 115, 0);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 5px;
 }
 
-a{
+a {
     line-height: 130%;
 }
 
-.verticalcenter1{ 
+.verticalcenter1 {
     width: 70%;
     vertical-align: middle;
     /* margin: auto; */
     border: 5px solid greenyellow;
     min-height: 200px;
-   
     margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-hr{
-height: 1px;
-color: blue;
-background-color: yellowgreen;
-border-color: red;
-border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+hr {
+    height: 1px;
+    color: blue;
+    background-color: yellowgreen;
+    border-color: red;
+    border: none;
 }
