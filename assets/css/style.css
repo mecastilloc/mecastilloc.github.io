@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+}
+
+/*settings all links' hover*/
+
+/* a:link {
+    color: gray;
+  } */
+
+/* a:visited {
+  color: gray;
+  } */
+
+a:hover {
+    color: #4aaaa5;
+    background: yellow;
+}
+
+/* a:active {
+    color: #4aaaa5;
+  } */
+
+/*ends settings all links' hover*/
+
+html {
+    background-image: url("../../assets/images/bg.png");
+    background-repeat: repeat;
+    background-color: black;
+    /*stiky footer*/
+    height: 98%;
+}
+
+header {
+    background: #ffffff;
+    border-color: #cccccc;
+    height: 58px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#headercont {
+    width: 100%;
+    max-width: 960px;
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    margin: auto;
+    text-align: right;
+    animation: photo 5s;
+    -webkit-animation: photo 5s;
+}
+
+footer {
+    background: #666666;
+    color: white;
+    height: 50px;
+    text-align: center;
+    padding-top: 25px;
+    margin-top: 20px;
+    border-top: 8px solid #4aaaa5;
+    /*sticky footer*/
+    flex-shrink: 0;
+    width: 100%;
+    font-size: x-small;
+}
+
+a, .navlink {
+    text-decoration: none;
+    color: #777777;
+}
+
+/*makes current page link diferent, has to be a class in every link corresponding the page showing
+.current:link {
+    color: #4aaaa5; 
+}*/
+
+.current {
+    color: white;
+    background-color: #4aaaa5;
+}
+
+#boxname {
+    color: white;
+    background: #4aaaa5;
+    font-size: 30px;
+    padding: 10px;
+    height: 58px;
+    position: relative;
+    top: -20px;
+    right: 20px;
+    float: left;
+}
+
+#main {
+    background: #ffffff;
+    border-color: #dddddd;
+    width: 100%;
+    max-width: 960px;
+    display: block;
+    margin: auto;
+    color: #777777;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+    /*sticky footer*/
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+}
+
+#h {
+    color: #4aaaa5;
+    animation: h 5s;
+    -webkit-animation: h 5s;
+}
+
+/*style of index.html*/
+
+#profile {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    animation: photo 5s;
+    -webkit-animation: photo 5s;
+}
+
+#content {
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    /*sticky footer*/
+    flex: 1 0 auto;
+}
+
+/*style of portfolio.html*/
+
+#portfoliotable {
+    table-layout: auto;
+    width: 100%;
+    max-width: 960px;
+    /* min-width: 380px; */
+    margin-left: 20px;
+    animation: photo 5s;
+    -webkit-animation: photo 5s;
+}
+
+/*#contentportfolio {
+     flex: 1 0 auto; 
+}*/
+img{ 
+    width: 300px;
+    height: 200px;
+}
+.box {
+    color: white;
+    background: #4aaaa5;
+    font-size: 20px;
+    padding: 10px;
+    height: 40px;
+    position: relative;
+    bottom: 50px;
+    float: left;
+    width: 300px;
+    text-align: center;
+}
+
+/*style of contact.html*/
+
+input:not([type="submit"]), textarea {
+    outline: solid;
+    display: block;
+    width: 380px;
+    padding: 4px 8px;
+    color: #cccccc;
+    font-size: 14px;
+    /*border-radius
+    -webkit-border-radius:2px;
+       -moz-border-radius:2px;
+            border-radius:2px;
+    transition
+    -webkit-transition:background 0.2s linear,
+                       box-shadow 0.6s linear;
+       -moz-transition:background 0.2s linear,
+                       box-shadow 0.6s linear;
+         -o-transition:background 0.2s linear,
+                       box-shadow 0.6s linear;
+            transition:background 0.2s linear,
+                       box-shadow 0.6s linear;*/
+}
+
+input:not([type="submit"]):active, textarea:active, input:not([type="submit"]):focus, textarea:focus {
+    background: #4aaaa5;
+    border: dashed 1px red;
+    /*box-shadow
+    -webkit-box-shadow:2px 2px 7px greenyellow inset;
+       -moz-box-shadow:2px 2px 7px greenyellow inset;
+            box-shadow:2px 2px 7px greenyellow inset;*/
+}
+
+input:not([type="submit"]) {
+    height: 20px;
+}
+
+/* placeholder */
+
+::-webkit-input-placeholder {
+    /*color: #777777; */
+    font-style: italic;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+    /*color:#BABABA;*/
+    font-style: italic;
+}
+
+textarea {
+    min-height: 200px;
+    resize: vertical
+}
+
+/** Styling the send button **/
+
+input[type=submit] {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    background: #4aaaa5;
+    font-size: 20px;
+    padding: 10px 15px;
+}
+
+@-webkit-keyframes h{
+    0% {color: orange;}
+    50% {color: yellow;}
+    100% {color: #16f1f1;}
+    }
+
+    @keyframes h{
+        0% {color: orange;}
+        50% {color: yellow;}
+        100% {color: #16f1f1;}
+        }
+
+        @-webkit-keyframes photo{
+            0% {opacity: 0; }
+            25% {opacity: .25;}
+            50% { opacity: .5;}
+            75% {opacity: .75;}
+            100% {opacity: 1;}
+        }
+        
+        @keyframes photo{
+            0% {opacity: 0; }
+            25% {opacity: .25;}
+            50% { opacity: .5;}
+            75% {opacity: .75;}
+            100% {opacity: 1;}
+        }
+
+@media screen and (max-width: 980px) {
+    #headercont, #main, #portfoliotable {
+        max-width: 980px;
+     }
+}
+
+@media screen and (max-width: 768px) {
+    #headercont, main, #portfoliotable {
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    #headercont, main, #portfoliotable, body {
+        max-width: 670px;
+        min-width: 370px;
+            }
+    #boxname {
+        font-size: 20px;
+        height: 40px;
+    }
+    header {
+        height: 40px;
+    }
+    .divnav {
+        position: relative;
+        top: -10px;
+    }
+
+
+    #portfoliotable {
+        table-layout: auto;
+        display: block;
+        width: 100%;
+    }
+    r {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      
+      td {
+        display: block;
+        width: 50%;
+        text-align: center;
+      }
+      
+      td[colspan] {
+        width: 100%;
+      }
+}
