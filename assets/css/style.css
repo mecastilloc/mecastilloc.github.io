@@ -1,7 +1,8 @@
 * {
     box-sizing: border-box;
 }
-
+/* font-family: 'Righteous', cursive;
+font-family: 'Open Sans', sans-serif; */
 /*settings all links' hover*/
 
 /* a:link {
@@ -13,8 +14,8 @@
   } */
 
 a:hover {
-    color: #4aaaa5;
-    background: yellow;
+    color: white;
+    background: orangered;
 }
 
 /* a:active {
@@ -32,7 +33,7 @@ html {
 }
 
 header {
-    background: #ffffff;
+    background: #ffffff00;
     border-color: #cccccc;
     height: 58px;
     margin-bottom: 20px;
@@ -43,22 +44,23 @@ header {
     width: 100%;
     max-width: 960px;
     display: block;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Righteous', cursive;
     padding: 20px;
     margin: auto;
     text-align: right;
-    animation: photo 5s;
-    -webkit-animation: photo 5s;
+    animation: photo 1s;
+    -webkit-animation: photo 1s;
+    border: 1px solid white;
 }
 
 footer {
-    background: #666666;
+    background: black;
     color: white;
     height: 50px;
     text-align: center;
     padding-top: 25px;
     margin-top: 20px;
-    border-top: 8px solid #4aaaa5;
+    border-top: 8px solid orangered;
     /*sticky footer*/
     flex-shrink: 0;
     width: 100%;
@@ -67,7 +69,12 @@ footer {
 
 a, .navlink {
     text-decoration: none;
-    color: #777777;
+    color: wheat;
+}
+
+.navlink{
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 /*makes current page link diferent, has to be a class in every link corresponding the page showing
@@ -76,13 +83,12 @@ a, .navlink {
 }*/
 
 .current {
-    color: white;
-    background-color: #4aaaa5;
+    color: orangered;
+    
 }
 
 #boxname {
-    color: white;
-    background: #4aaaa5;
+    color: orangered;
     font-size: 30px;
     padding: 10px;
     height: 58px;
@@ -93,17 +99,17 @@ a, .navlink {
 }
 
 #main {
-    background: #ffffff;
+    background: #ffffff00;
     border-color: #dddddd;
     width: 100%;
     max-width: 960px;
     display: block;
     margin: auto;
-    color: #777777;
+    color: white;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-left: 5px;
     /*sticky footer*/
     height: 98%;
@@ -112,9 +118,10 @@ body {
 }
 
 #h {
-    color: #4aaaa5;
-    animation: h 5s;
-    -webkit-animation: h 5s;
+    color:orangered;
+    font-family: 'Righteous', cursive;
+    animation: h 1s;
+    -webkit-animation: h 1s;
 }
 
 /*style of index.html*/
@@ -124,8 +131,8 @@ body {
     height: 100px;
     float: left;
     margin-right: 20px;
-    animation: photo 5s;
-    -webkit-animation: photo 5s;
+    animation: photo 1s;
+    -webkit-animation: photo 1s;
 }
 
 #content {
@@ -144,8 +151,8 @@ body {
     max-width: 960px;
     /* min-width: 380px; */
     margin-left: 20px;
-    animation: photo 5s;
-    -webkit-animation: photo 5s;
+    animation: photo 1s;
+    -webkit-animation: photo 1s;
 }
 
 /*#contentportfolio {
@@ -156,8 +163,8 @@ img{
     height: 200px;
 }
 .box {
-    color: white;
-    background: #4aaaa5;
+    color: orangered;
+    background: black;
     font-size: 20px;
     padding: 10px;
     height: 40px;
@@ -171,17 +178,19 @@ img{
 /*style of contact.html*/
 
 input:not([type="submit"]), textarea {
-    outline: solid;
+    /* outline: solid;
+    outline-color: orangered; */
     display: block;
     width: 380px;
     padding: 4px 8px;
-    color: #cccccc;
+    color: rgb(0, 117, 250);
     font-size: 14px;
-    /*border-radius
-    -webkit-border-radius:2px;
-       -moz-border-radius:2px;
-            border-radius:2px;
-    transition
+    /*border-radius*/
+    -webkit-border-radius:8px;
+       -moz-border-radius:8px;
+            border-radius:8px;
+    border: 3px solid orangered;
+    /* transition */
     -webkit-transition:background 0.2s linear,
                        box-shadow 0.6s linear;
        -moz-transition:background 0.2s linear,
@@ -189,12 +198,13 @@ input:not([type="submit"]), textarea {
          -o-transition:background 0.2s linear,
                        box-shadow 0.6s linear;
             transition:background 0.2s linear,
-                       box-shadow 0.6s linear;*/
+                       box-shadow 0.6s linear;
 }
 
 input:not([type="submit"]):active, textarea:active, input:not([type="submit"]):focus, textarea:focus {
-    background: #4aaaa5;
+    background: black;
     border: dashed 1px red;
+    color:white
     /*box-shadow
     -webkit-box-shadow:2px 2px 7px greenyellow inset;
        -moz-box-shadow:2px 2px 7px greenyellow inset;
@@ -230,22 +240,22 @@ input[type=submit] {
     cursor: pointer;
     background: none;
     border: none;
-    color: white;
-    background: #4aaaa5;
+    color: orangered;
+    background: black;
     font-size: 20px;
     padding: 10px 15px;
 }
 
 @-webkit-keyframes h{
-    0% {color: orange;}
-    50% {color: yellow;}
-    100% {color: #16f1f1;}
+    0% {color: yellow;}
+    50% {color: orange;}
+    100% {color: rgb(255, 136, 0);}
     }
 
     @keyframes h{
-        0% {color: orange;}
-        50% {color: yellow;}
-        100% {color: #16f1f1;}
+        0% {color: yellow;}
+        50% {color: orange;}
+        100% {color: rgb(255, 136, 0);}
         }
 
         @-webkit-keyframes photo{
