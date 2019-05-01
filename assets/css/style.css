@@ -1,8 +1,10 @@
 * {
     box-sizing: border-box;
 }
+
 /* font-family: 'Righteous', cursive;
 font-family: 'Open Sans', sans-serif; */
+
 /*settings all links' hover*/
 
 /* a:link {
@@ -56,7 +58,7 @@ header {
 footer {
     background: black;
     color: white;
-    height: 62px;
+    height: 50 px;
     text-align: center;
     margin-top: 10px;
     padding-top: 3px;
@@ -65,28 +67,26 @@ footer {
     flex-shrink: 0;
     width: 100%;
     text-align: center;
-    }
+}
 
-    .footimg{
-        width: 50px ;
-        height: 50px;
-        margin: 0px 5px 0px 5px;
-    }
-    
+.footimg {
+    width: 40px;
+    height: 40px;
+    margin: 0px 5px 0px 5px;
+}
 
-    .foota:hover {
-        color:none;
-        background:none;
-    }
-    
+.foota:hover {
+    color: none;
+    background: none;
+}
+
 a, .navlink {
     text-decoration: none;
     color: wheat;
 }
 
-.navlink{
+.navlink {
     font-family: 'Open Sans', sans-serif;
-
 }
 
 /*makes current page link diferent, has to be a class in every link corresponding the page showing
@@ -96,7 +96,6 @@ a, .navlink {
 
 .current {
     color: orangered;
-    
 }
 
 #boxname {
@@ -130,10 +129,14 @@ body {
 }
 
 #h {
-    color:orangered;
+    color: orangered;
     font-family: 'Righteous', cursive;
     animation: h 1s;
     -webkit-animation: h 1s;
+}
+
+.youtube{
+    text-align: center;
 }
 
 /*style of index.html*/
@@ -170,10 +173,12 @@ body {
 /*#contentportfolio {
      flex: 1 0 auto; 
 }*/
-img{ 
+
+img {
     width: 300px;
     height: 200px;
 }
+
 .box {
     color: orangered;
     background: black;
@@ -200,7 +205,6 @@ img{
     text-align: center;
 }
 
-
 /*style of contact.html*/
 
 input:not([type="submit"]), textarea {
@@ -212,25 +216,21 @@ input:not([type="submit"]), textarea {
     color: rgb(0, 117, 250);
     font-size: 14px;
     /*border-radius*/
-    -webkit-border-radius:8px;
-       -moz-border-radius:8px;
-            border-radius:8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
     border: 3px solid orangered;
     /* transition */
-    -webkit-transition:background 0.2s linear,
-                       box-shadow 0.6s linear;
-       -moz-transition:background 0.2s linear,
-                       box-shadow 0.6s linear;
-         -o-transition:background 0.2s linear,
-                       box-shadow 0.6s linear;
-            transition:background 0.2s linear,
-                       box-shadow 0.6s linear;
+    -webkit-transition: background 0.2s linear, box-shadow 0.6s linear;
+    -moz-transition: background 0.2s linear, box-shadow 0.6s linear;
+    -o-transition: background 0.2s linear, box-shadow 0.6s linear;
+    transition: background 0.2s linear, box-shadow 0.6s linear;
 }
 
 input:not([type="submit"]):active, textarea:active, input:not([type="submit"]):focus, textarea:focus {
     background: black;
     border: dashed 1px red;
-    color:white
+    color: white
     /*box-shadow
     -webkit-box-shadow:2px 2px 7px greenyellow inset;
        -moz-box-shadow:2px 2px 7px greenyellow inset;
@@ -272,38 +272,70 @@ input[type=submit] {
     padding: 10px 15px;
 }
 
-@-webkit-keyframes h{
-    0% {color: yellow;}
-    50% {color: orange;}
-    100% {color: rgb(255, 136, 0);}
+@-webkit-keyframes h {
+    0% {
+        color: yellow;
     }
+    50% {
+        color: orange;
+    }
+    100% {
+        color: rgb(255, 136, 0);
+    }
+}
 
-    @keyframes h{
-        0% {color: yellow;}
-        50% {color: orange;}
-        100% {color: rgb(255, 136, 0);}
-        }
+@keyframes h {
+    0% {
+        color: yellow;
+    }
+    50% {
+        color: orange;
+    }
+    100% {
+        color: rgb(255, 136, 0);
+    }
+}
 
-        @-webkit-keyframes photo{
-            0% {opacity: 0; }
-            25% {opacity: .25;}
-            50% { opacity: .5;}
-            75% {opacity: .75;}
-            100% {opacity: 1;}
-        }
-        
-        @keyframes photo{
-            0% {opacity: 0; }
-            25% {opacity: .25;}
-            50% { opacity: .5;}
-            75% {opacity: .75;}
-            100% {opacity: 1;}
-        }
+@-webkit-keyframes photo {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes photo {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 @media screen and (max-width: 980px) {
     #headercont, #main, #portfoliotable {
         max-width: 980px;
-     }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -316,7 +348,7 @@ input[type=submit] {
     #headercont, main, #portfoliotable, body {
         max-width: 670px;
         min-width: 370px;
-            }
+    }
     #boxname {
         font-size: 20px;
         height: 40px;
@@ -328,8 +360,6 @@ input[type=submit] {
         position: relative;
         top: -10px;
     }
-
-
     #portfoliotable {
         table-layout: auto;
         display: block;
@@ -339,15 +369,13 @@ input[type=submit] {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-      }
-      
-      td {
+    }
+    td {
         display: block;
         width: 50%;
         text-align: center;
-      }
-      
-      td[colspan] {
+    }
+    td[colspan] {
         width: 100%;
-      }
+    }
 }
