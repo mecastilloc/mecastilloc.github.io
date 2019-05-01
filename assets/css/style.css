@@ -56,17 +56,29 @@ header {
 footer {
     background: black;
     color: white;
-    height: 50px;
+    height: 62px;
     text-align: center;
-    padding-top: 25px;
-    margin-top: 20px;
+    margin-top: 10px;
+    padding-top: 3px;
     border-top: 8px solid orangered;
     /*sticky footer*/
     flex-shrink: 0;
     width: 100%;
-    font-size: x-small;
-}
+    text-align: center;
+    }
 
+    .footimg{
+        width: 50px ;
+        height: 50px;
+        margin: 0px 5px 0px 5px;
+    }
+    
+
+    .foota:hover {
+        color:none;
+        background:none;
+    }
+    
 a, .navlink {
     text-decoration: none;
     color: wheat;
@@ -174,6 +186,9 @@ img{
     width: 300px;
     text-align: center;
 }
+
+
+
 
 /*style of contact.html*/
 
