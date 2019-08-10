@@ -272,6 +272,32 @@ input[type=submit] {
     padding: 10px 15px;
 }
 
+
+/* scrollbar css */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    background-clip: content-box;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 102, 0); 
+    border-radius: 10px;
+     
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: greenyellow; 
+  }
+
 @-webkit-keyframes h {
     0% {
         color: yellow;
